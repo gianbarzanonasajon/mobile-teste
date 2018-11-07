@@ -14,11 +14,5 @@
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-  <p>A seguir um exemplo de NasajonUiAppSelect</p>
-  <form [formGroup]="addForm">
-      <nsjapp-ui-select label="Cliente: " [service]="clienteProvider" [configLayout]="configLayout" campoSelecao="codigo"
-          campoLabel="nome" [podeFiltrar]="true" [arrFiltros]="filtrosCliente" formControlName="cliente"></nsjapp-ui-select>
-  </form>
-  {{addForm.value | json}}
+  <button ion-button secondary menuToggle>Toggle Menu</button>  
 </ion-content>

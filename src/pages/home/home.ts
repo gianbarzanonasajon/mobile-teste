@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 
 //Importaçãoes de teste
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ClienteProvider } from '../../providers/cliente/cliente';
 
 @Component({
   selector: 'page-home',
@@ -64,7 +63,6 @@ export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    public clienteProvider: ClienteProvider,
     public _formBuilder: FormBuilder) {
       this.addForm = this._formBuilder.group({
         'cliente': ['', Validators.compose([Validators.required])],

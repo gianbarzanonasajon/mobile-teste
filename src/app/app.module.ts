@@ -8,8 +8,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { NasajonAppUiModule } from 'nasajon-ui-mobile5';
-import { ClienteProvider } from '../providers/cliente/cliente';
+
 
 @NgModule({
   declarations: [
@@ -20,8 +19,6 @@ import { ClienteProvider } from '../providers/cliente/cliente';
   imports: [
     BrowserModule,    
     IonicModule.forRoot(MyApp),
-
-    NasajonAppUiModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,8 +29,7 @@ import { ClienteProvider } from '../providers/cliente/cliente';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ClienteProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler},    
   ]
 })
 export class AppModule {}
